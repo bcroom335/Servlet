@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>後臺管理系統</title>
+<style>
+.main{
+    width:800px;
+    height:300px;
+    text-align:center;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-400px;
+    margin-top:-200px;
+  }
+input[type=text] {
+  width: 100%;
+  margin-bottom:40px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.word{
+  margin-bottom:20px;
+  font-size: 86px;
+  font-family: Broadway;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  color: 		#5151a2;
+}
+input[type=submit]{
+  background-color: #f0f0f0;
+  border: none;
+  color: 	#6c6c6c;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+button {
+  background-color: white; 
+  border: 2px solid #008CBA;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.head{
+  float:right;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="head">
+      <button onclick="javascript:location.href='http://localhost:8081/SecondProject/register.html'">註冊</button>
+      <button onclick="">登入</button>
+    </div>
+  </header>
+	<div class="main">
+		<p class="word">SEARCH
+    	<form method="post" action="MemSearchC">
+    	<input type="text" name="name" placeholder="輸入姓名查詢會員資料" autocomplete="off"/>
+    	<input type="submit" value="查詢"/>
+    	</form>
+	</div>
+</body>
+</html>

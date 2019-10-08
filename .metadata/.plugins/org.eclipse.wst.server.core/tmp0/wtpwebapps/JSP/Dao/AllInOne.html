@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>新增員工資料</h2>
+	<form method="post" action="../InsertControler">
+	<table>
+			<tr><td>員工編號</td>
+				<td><input type="text" name="empno"/></td></tr>
+			<tr><td>員工姓名</td>
+				<td><input type="text" name="ename"/></td></tr>
+			<tr><td>工作起始日</td>
+				<td><input type="text" name="hiredate"/></td></tr>
+			<tr><td>薪水</td>
+				<td><input type="text" name="salary"/></td></tr>
+			<tr><td>部門</td>
+				<td><input type="text" name="deptno"/></td></tr>
+			<tr><td>職位名稱</td>
+				<td><input type="text" name="title"/></td></tr>
+		</table>
+	<input type="submit" value="確定">
+	</form>
+	
+	<h2>刪除員工資料</h2>
+	<form method="post" action="../GetEmp">
+	輸入要刪除的員工編號<input type="text" name="empno"><p>
+	<input type="submit" value="確定">
+	</form>
+	
+	<h2>查詢員工資料</h2>
+	<form method="post" action="../GetEmp">
+	輸入員工編號<input type="text" name="empno"><p>
+	<input type="submit" value="確定">
+	</form>
+
+</body>
+</html>

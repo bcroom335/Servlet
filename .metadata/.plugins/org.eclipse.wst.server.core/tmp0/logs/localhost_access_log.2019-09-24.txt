@@ -1,0 +1,6 @@
+127.0.0.1 - - [24/Sep/2019:14:17:09 +0800] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [24/Sep/2019:14:17:10 +0800] "GET /SecondProject/MemAddC HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [24/Sep/2019:14:17:10 +0800] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [24/Sep/2019:14:17:20 +0800] "GET /SecondProject/Index1.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [24/Sep/2019:14:17:20 +0800] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [24/Sep/2019:14:17:37 +0800] "GET /SecondProject/register.html HTTP/1.1" 304 -

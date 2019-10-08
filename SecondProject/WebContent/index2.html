@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>專題二首頁</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        form {
+            width: 600px;
+            margin: auto;
+        }
+
+        .st1 {
+            border-bottom: solid 1px #6c6c6c;
+            margin-bottom: 15px;
+        }
+
+        .f1 {
+            width: 500px;
+            margin: 10px;
+            border-radius: 20px;
+            border: #00bb00 solid 1px;
+            font-family: 微軟正黑體;
+        }
+
+        span {
+            color: #8e8e8e;
+            font-size: 12px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("name").addEventListener("blur", ckAcc);
+            document.getElementById("birth").addEventListener("blur", ckDate);
+            document.getElementById("address").addEventListener("blur", ckAdd);
+            document.getElementById("mail").addEventListener("blur", ckEmail);
+            document.getElementById("tel").addEventListener("blur", ckTel);
+        });
+
+        function ckAcc() {
+            let theAcc = document.getElementById("name").value;
+            re = /^[\u4e00-\u9fff]{2,}$/;
+            if (re.test(theAcc)) {
+                //alert("姓名正確");
+                document.getElementById("spname").innerHTML = "<img src='images/correct.png'>";
+            } else {
+                //alert("姓名不正確");
+                document.getElementById("spname").innerHTML = "<img src='images/wrong.png'>不正確";
+            }
+        }
+        function ckDate() {
+            let theDate = document.getElementById("birth").value;
+            let len = theDate.length;
+            let dateObj = new Date(theDate);
+            let dateObjStr = new String(theDate);
+            if (theDate == "") {
+                //alert("請輸入日期");
+                document.getElementById("spdate").innerHTML = "<img src='images/wrong.png'>日期不能空白";
+            } else if (len >= 6) {
+                if (dateObjStr.split("/")[2] == dateObj.getDate()) {
+                    //alert("日期輸入正確");
+                    document.getElementById("spdate").innerHTML = "<img src='images/correct.png'>";
+                } else {
+                    //alert("請輸入正確日期");
+                    document.getElementById("spdate").innerHTML = "<img src='images/wrong.png'>請輸入正確日期";
+                }
+            } else {
+                //alert("請輸入正確日期格式");
+                document.getElementById("spdate").innerHTML = "<img src='images/wrong.png'>請輸入正確日期格式";
+            }
+        }
+        function ckAdd() {
+            let theAdd = document.getElementById("address").value;
+            if (theAdd == "") {
+                document.getElementById("spadd").innerHTML = "<img src='images/wrong.png'>住址不能空白";
+            } else  {
+                document.getElementById("spadd").innerHTML = "<img src='images/correct.png'>";
+            } 
+        }
+        function ckEmail() {
+            let theMail = document.getElementById("mail").value;
+            if (theMail == "") {
+                document.getElementById("spmail").innerHTML = "<img src='images/wrong.png'>mail不能空白";
+            } else  {
+                document.getElementById("spmail").innerHTML = "<img src='images/correct.png'>";
+            } 
+        }
+        function ckTel() {
+            let theMail = document.getElementById("tel").value;
+            if (theMail == "") {
+                document.getElementById("spmail").innerHTML = "<img src='images/wrong.png'>電話不能空白";
+            } else  {
+                document.getElementById("spmail").innerHTML = "<img src='images/correct.png'>";
+            } 
+        }
+    </script>
+</head>
+
+<body>
+    <div id="allpage">        
+        <form action="MemAddC" method="Post" enctype="multipart/form-data">
+            <fieldset class="f1">
+                <legend style="font-family:arial rounded mt;font-size: 25px ">Form Check</legend>
+                <div class="st1">
+                    <label>姓名:</label>
+                    <input type="text" id="name" name="name" placeholder="請輸入姓名" autofocus>
+                    <span id="spname"></span>
+                    <br>
+                    <span>(1.不可空白，2.至少兩個字以上，3.必須全部為中文字)</span>
+                </div>
+                <div class="st1">
+                    <label>出生日期:</label>
+                    <input type="text" id="birth" name="birth" placeholder="ex:2018/06/14">
+                    <span id="spdate"></span>
+                    <br>
+                    <span>(格式:西元年/月/日 yyyy/mm/dd)</span>
+                </div>
+                <div class="st1">
+                    <label>地址:</label>
+                    <input type="text" id="address" name="address">
+                    <span id="spadd"></span>
+                    <br>
+                    <span></span>
+                </div>
+                <div class="st1">
+                    <label>E-mail:</label>
+                    <input type="text" id="mail" name="mail">
+                    <span id="spmail"></span>
+                    <br>
+                    <span></span>
+                </div>
+                <div class="st1">
+                    <label>電話:</label>
+                    <input type="text" id="tel" name="tel">
+                    <span id="sptel"></span>
+                    <br>
+                    <span></span>
+                </div>
+                <div style="text-align: center">
+                    <input type="submit" value="新增會員資料" onclick="ckAcc(),ckDate(),ckAdd(),ckEmail(),ckTel()">
+
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

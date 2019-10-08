@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="javax.servlet.http.Part"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.OutputStream"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.InputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.MultipartConfig"/>
+<fullyQualifiedTypeName name="java.util.Enumeration"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebInitParam"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletConfig"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="javax.naming.Context"/>
+<fullyQualifiedTypeName name="javax.activation.DataSource"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="com.iii.eeit109.bean.EmpBean"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.stream.buffer.sax.Properties"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="_DAO.MemberDaoImpl"/>
+<fullyQualifiedTypeName name="_DAO.MemberBean"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.INTERNAL"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+</qualifiedTypeNameHistroy>

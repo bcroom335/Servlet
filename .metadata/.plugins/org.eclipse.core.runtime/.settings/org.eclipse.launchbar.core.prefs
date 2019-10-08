@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.wst.server,Tomcat\ v9.0\ Server\ at\ localhost/name=Tomcat v9.0 Server at localhost
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:test,org.eclipse.launchbar.core.descriptorType.default\:Tomcat v9.0 Server at localhost,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:/Index1.html,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:JSP,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:SecondProject,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:servlet
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:test/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:/Index1.html/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.wst.server\:Tomcat v9.0 Server at localhost
+org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:JSP/activeLaunchMode=run
+org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:JSP/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.wst.server\:Tomcat v9.0 Server at localhost
+org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:servlet/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.wst.server\:Tomcat v9.0 Server at localhost

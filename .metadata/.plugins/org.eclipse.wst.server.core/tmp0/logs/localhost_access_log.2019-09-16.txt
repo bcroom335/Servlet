@@ -1,0 +1,12 @@
+127.0.0.1 - - [16/Sep/2019:11:41:15 +0800] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:11:41:15 +0800] "GET /SecondProject/Index1.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:11:41:15 +0800] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:11:41:27 +0800] "GET /SecondProject/register.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:11:42:21 +0800] "POST /SecondProject/MemAddC HTTP/1.1" 200 313
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:11:42:37 +0800] "POST /SecondProject/MemSearchC HTTP/1.1" 200 2182
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:11:42:42 +0800] "POST /SecondProject/MemSearchC HTTP/1.1" 200 16269
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:11:42:48 +0800] "POST /SecondProject/MemberUpdate.jsp HTTP/1.1" 200 1408
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:11:43:17 +0800] "POST /SecondProject/MemUpdateC HTTP/1.1" 200 313
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:11:43:19 +0800] "POST /SecondProject/MemSearchC HTTP/1.1" 200 16386
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:11:43:23 +0800] "POST /SecondProject/MemberDelete.jsp HTTP/1.1" 200 1531
+0:0:0:0:0:0:0:1 - - [16/Sep/2019:11:43:26 +0800] "POST /SecondProject/MemDeleteC HTTP/1.1" 200 313
